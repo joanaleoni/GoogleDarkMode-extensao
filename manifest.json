@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "Google DarkMode",
+    "description": "Deixe a página inicial do Google escura",
+    "author": "Joana Leoni",
+    "browser_action": {
+        "default_title": "Google DarkMode",
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "css": ["style.css"
+            ],
+            "matches": [
+                "https://www.google.com/*"
+            ]
+        }
+    ]
+}
+
